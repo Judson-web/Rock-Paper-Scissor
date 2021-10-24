@@ -2,9 +2,9 @@ import random
 
 
 data = {
-    "r": "Rock",
-    "p": "Paper",
-    "s": "Scissor"
+    "r": "Rᴏᴄᴋ",
+    "p": "Pᴀᴘᴇʀ",
+    "s": "Sᴄɪssᴏʀ"
 }
 
 
