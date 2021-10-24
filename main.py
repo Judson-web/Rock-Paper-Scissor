@@ -18,10 +18,11 @@ def main():
             keys.append(key)
         
         # key of user 
-        user_input = "Enter your key." + "\n" + "Some Keys -"
+        user_input = "Enter your key." + "\n" + "Keys :-"
         for key in keys:
-            user_input += " " + key + "for " + data[key]
+            user_input += f" '{key}' for {data[key]}"
         user_input += "\n:- "
+        user = input(user_input)
         
         # key of computer/opponent
         computer = random.choice(keys)
@@ -42,12 +43,11 @@ def main():
             print(text+"You lose")
         
         # next game or finished
-        next = input("Do you need this game again? 'y' for yes and 'n' for no.\n:- ")
+        next = input("\nDo you need this game again? 'y' for yes and 'n' for no.\n:- ")
         if next == "y" or next == "yes":
             print("\n\nNext Game")
         else:
-            print("Game Finished")
+            print("\nGame Finished")
             break
-
 
 main()
