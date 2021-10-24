@@ -11,11 +11,19 @@ data = {
 def main():
     print("Game Started\n\n")
     while True:
-        # key of user
-        user = input("Enter your command 'r' for rock 'p' for paper and 's' scissor\n:- ")
+        # keys
+        keys = []
+        for key in data:
+            keys.append(key)
+        
+        # key of user 
+        user_input = "Enter your key." + "\n" + "Some Keys -"
+        for key in keys:
+            user_input += " " + key + "for " + data[key]
+        user_input += "\n:- "
         
         # key of computer/opponent
-        computer = random.choice(['r', 'p', 's'])
+        computer = random.choice(keys)
         
         # text for print result
         text = "You: " + data[user] + "\n" + "Computer: " + data[computer]+"\n"
