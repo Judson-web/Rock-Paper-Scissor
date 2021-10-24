@@ -9,7 +9,7 @@ data = {
 
 
 def main():
-    print("Game Started\n\n")
+    print("Gᴀᴍᴇ Sᴛᴀʀᴛᴇᴅ\n\n")
     while True:
         
         # keys
@@ -18,7 +18,7 @@ def main():
             keys.append(key)
         
         # key of user 
-        user_input = "Enter your key." + "\n" + "Keys :-"
+        user_input = "Eɴᴛᴇʀ ʏᴏᴜʀ ᴋᴇʏ." + "\n" + "Kᴇʏs :-"
         for key in keys:
             user_input += f" '{key}' for {data[key]}"
         user_input += "\n:- "
@@ -28,26 +28,26 @@ def main():
         computer = random.choice(keys)
         
         # text for print result
-        text = "You: " + data[user] + "\n" + "Computer: " + data[computer]+"\n"
+        text = "Yᴏᴜ: " + data[user] + "\n" + "Cᴏᴍᴘᴜᴛᴇʀ: " + data[computer]+"\n"
         
         # same keys
         if user == computer:
-            print(text+"Same")
+            print(text+"Sᴀᴍᴇ")
         
         # win keys
         elif (user == "r" and computer == "s") or (user == "s" and computer == "p") or (user == "p" and computer == "r"):
-            print(text+"You won")
+            print(text+"Yᴏᴜ Wᴏɴ")
         
         # lose keys
         else:
-            print(text+"You lose")
+            print(text+"Yᴏᴜ ʟᴏsᴇ")
         
         # next game or finished
-        next = input("\nDo you need this game again? 'y' for yes and 'n' for no.\n:- ")
-        if next == "y" or next == "yes":
-            print("\n\nNext Game")
+        next = input("\nDᴏ ʏᴏᴜ ɴᴇᴇᴅ ᴛʜɪs ɢᴀᴍᴇ ᴀɢᴀɪɴ? 'y' ғᴏʀ ʏᴇs ᴀɴᴅ 'n' ғᴏʀ ɴᴏ.\n:- ")
+        if next == "y" or next == "ʏᴇs":
+            print("\n\nNᴇxᴛ Gᴀᴍᴇ")
         else:
-            print("\nGame Finished")
+            print("\nGᴀᴍᴇ Fɪɴɪsʜᴇᴅ")
             break
 
 main()
