@@ -11,6 +11,7 @@ data = {
 def main():
     print("Game Started\n\n")
     while True:
+        
         # keys
         keys = []
         for key in data:
@@ -40,7 +41,7 @@ def main():
         else:
             print(text+"You lose")
         
-        # next game 
+        # next game or finished
         next = input("Do you need this game again? 'y' for yes and 'n' for no.\n:- ")
         if next == "y" or next == "yes":
             print("\n\nNext Game")
