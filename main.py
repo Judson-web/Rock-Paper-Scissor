@@ -2,14 +2,14 @@ import random
 
 
 data = {
-    "r": "Rᴏᴄᴋ",
-    "p": "Pᴀᴘᴇʀ",
-    "s": "Sᴄɪssᴏʀ"
+    "r": "Rᴏᴄᴋ🪨",
+    "p": "Pᴀᴘᴇʀ📜",
+    "s": "Sᴄɪssᴏʀ✂️"
 }
 
 
 def main():
-    print("Gᴀᴍᴇ Sᴛᴀʀᴛᴇᴅ\n\n")
+    print("Gᴀᴍᴇ Sᴛᴀʀᴛᴇᴅ👑\n\n")
     while True:
         
         # keys
@@ -36,11 +36,11 @@ def main():
         
         # win keys
         elif (user == "r" and computer == "s") or (user == "s" and computer == "p") or (user == "p" and computer == "r"):
-            print(text+"Yᴏᴜ Wᴏɴ")
+            print(text+"Yᴏᴜ Wᴏɴ😎")
         
         # lose keys
         else:
-            print(text+"Yᴏᴜ ʟᴏsᴇ")
+            print(text+"Yᴏᴜ ʟᴏsᴇ🥺")
         
         # next game or finished
         next = input("\nDᴏ ʏᴏᴜ ɴᴇᴇᴅ ᴛʜɪs ɢᴀᴍᴇ ᴀɢᴀɪɴ? 'y' ғᴏʀ ʏᴇs ᴀɴᴅ 'n' ғᴏʀ ɴᴏ.\n:- ")
